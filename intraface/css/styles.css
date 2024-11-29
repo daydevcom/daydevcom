@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Noto Sans Thai", serif;
+}
+
+.center img {
+    display: block;
+    /* เพื่อจัดให้อยู่กึ่งกลางด้วย margin auto */
+    margin: 0 auto;
+    /* กึ่งกลางแนวนอน */
+    position: absolute;
+    /* ใช้ absolute เพื่อควบคุมตำแหน่ง */
+    top: 0;
+    /* ชิดด้านบน */
+    left: 0;
+    /* เริ่มจากซ้าย */
+    right: 0;
+    /* ขยายไปทางขวา */
+    transform: translateY(0);
+    /* ไม่มีการเลื่อนแนวแกน Y */
+}
+
+/* Style for the Start button */
+button {
+    position: fixed;
+    bottom: 0; /* ชิดขอบล่าง */
+    left: 0;
+    right: 0;
+    width: 100%; /* ความกว้างเต็มหน้าจอ */
+    height: 60px; /* เพิ่มความสูงของปุ่ม */
+    font-size: 20px; /* เพิ่มขนาดตัวอักษร */
+    background-color: #3f51b5; /* สีพื้นหลัง */
+    color: white; /* สีตัวอักษร */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px; /* จัดให้ข้อความอยู่กึ่งกลาง */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูเหมือน Footer */
+}
+
+button:hover {
+    background-color: #303f9f; /* สีปุ่มเมื่อ hover */
+}
+
+#countdown{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+canvas {width: 80% !important;}
+
+.mdl-data-table{width: 100vw;}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+.page-content h1{
+    font-family: "Noto Sans Thai", serif !important;
+    text-align: center;
+}
+
+.page-content h2{
+    font-family: "Noto Sans Thai", serif !important;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.page-content p{
+    font-family: "Noto Sans Thai", serif !important;
+    text-align: center;
+}
+
+/* Style for webcam-container */
+#webcam-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: url('../images/logo.png') center center no-repeat; /* ตั้งค่ารูปภาพพื้นหลัง */
+    background-size: inherit;
+    background-position: center 57%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for label-container */
+#label-container {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: #3f51b5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.demo-card-square.mdl-card {
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    top: 10%; /* ห่างจากด้านบน 20% */
+    left: 50%; /* กึ่งกลางแนวนอน */
+    transform: translateX(-50%); /* เลื่อนกลับครึ่งหนึ่งของความกว้าง */
+    background-color: #f5f5f5; /* ตัวอย่างพื้นหลัง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ตัวอย่างเงา */
+    border-radius: 8px; /* ตัวอย่างมุมโค้ง */
+}
+
+.mdl-sawang{
+    margin: 4%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+.mdl-button{
+    font-family: "Noto Sans Thai", serif !important;
+}
