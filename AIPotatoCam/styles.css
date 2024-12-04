@@ -1,0 +1,81 @@
+button{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    height:50px;
+    background-color: rgb(255, 184, 3);
+    color:white;
+    font-size: 2.0rem;
+    font-weight: bold;
+    cursor:pointer;
+    z-index: 1000;
+}
+
+button:hover{
+    background-color: rgb(184, 77, 0);
+}
+
+#webcam-container{
+    position: absolute;
+    top: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 80%;
+    aspect-ratio: 1/1;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#label-container{
+    position: absolute;
+    top: calc(20px + 80vw);
+    left:50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #fff;
+    border:  1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 999;
+}
+
+.progress-bar-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.progress-bar{
+    flex: 1;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right:10px;
+    position: relative;
+}
+
+.progress-bar-fill{
+    height: 100%;
+    background-color: #59e42bd8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right:10px;
+    position: relative;
+}
+
+.progress-text{
+    font-size: 14px;
+    white-space: nowrap;
+    width: 50px;
+    text-align: right;
+}
